@@ -1,0 +1,12 @@
+.custom-text h2, .custom-text h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.custom-text p {
+    margin-bottom: 15px;
+}
+
+.custom-text a {
+    margin-top: 15px;
+}

@@ -1,0 +1,34 @@
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Permite desplazamiento vertical si el contenido es demasiado largo */
+}
+
+.box {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto; /* Centrar el contenido en el área de contenido */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente oscuro */
+    border-radius: 10px;
+    text-align: center;
+    color: #fff; /* Color del texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para efecto de elevación */
+}
+
+.separator {
+    border-top: 1px solid #fff;
+    margin: 20px 0;
+}

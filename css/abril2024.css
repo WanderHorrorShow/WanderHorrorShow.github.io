@@ -1,0 +1,73 @@
+/* Estilos CSS para hacer la página responsive */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Ajusta el valor según lo redondeado que quieras el borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    transition: transform 0.3s ease; /* Agrega una transición suave al hacer hover */
+}
+
+.grid-item img:hover {
+    transform: scale(1.05); /* Hace que la imagen se agrande ligeramente al hacer hover */
+}
+
+
+
+
+
+/* Estilos para hacer la página responsive */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

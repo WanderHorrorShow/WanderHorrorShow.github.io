@@ -1,0 +1,27 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Estilos para la imagen centrada */
+.centered-image-container {
+    text-align: center;
+}
+
+.centered-image-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}

@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Color de fondo (puedes ajustar según tu preferencia) */
+    color: #695BF1; /* Color del texto */
+    font-family: 'Arial', sans-serif; /* Familia de fuentes (puedes ajustar según tu preferencia) */
+}
+
+.texto-horror {
+    text-align: center;
+    font-size: 32px;
+    color: #FF0000; /* Color rojo (puedes ajustar según tu preferencia) */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    margin: 20px 0; /* Espaciado hacia arriba y abajo */
+}

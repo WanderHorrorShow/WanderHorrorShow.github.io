@@ -1,0 +1,55 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Estilos para los reproductores de video embebidos */
+.video-players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-players iframe {
+    margin: 10px;
+}
+
+/* Estilos para el footer de redes sociales */
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Para hacer los iconos de redes sociales redondeados */
+}
