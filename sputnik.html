@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPUTNIK(RUS) 2020 | WanderHorrorShow</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/pelis.css"> 
+    <link rel="stylesheet" href="css/sliderbard.css">
+    <link rel="stylesheet" href="css/footerpelis.css"> 
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/thejacket.css"/>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('img/jacket.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 220px;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            font-size: 22px;
+            color: #f00;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            margin-left: 240px; /* espacio para el sidebar */
+            padding: 40px 20px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.85);
+            text-align: center;
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-links li a img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .footercolor {
+            margin-top: 10px;
+            color: #aaa;
+        }
+
+        .footercolor span {
+            display: block;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="https://www.youtube.com/@TheWanderHorrorShow" target="_blank">YouTube</a></li>
+            <li><a href="https://www.paypal.me/WanderGameplay" target="_blank">Donaciones</a></li>
+            <li><a href="mailto:wanderhorrorshow@gmail.com">Contacto</a></li>
+        </ul>
+    </div>
+
+  
+<!-- Contenedor del reproductor de video -->
+<div class="video-container">
+    <div class="video-wrapper">
+      <iframe 
+        src="https://geo.dailymotion.com/player.html?video=x8nh1i9" 
+        allowfullscreen 
+        title="Dailymotion Video Player" 
+        allow="web-share">
+      </iframe>
+    </div>
+  </div>
+  
+  
+
+        <!-- Footer -->
+        <footer>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/wanderhorrorshow" target="_blank"><img src="img/fb.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/wanderhorrorshow" target="_blank"><img src="img/ig.png" alt="Instagram"></a></li>
+            </ul>
+            <div class="footercolor">
+                © 2025 WanderHorrorShow
+                <span>"Zxscailer Corp". No almacena ninguna película en sus servidores ni los aloja, son reproductores de terceros.</span>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

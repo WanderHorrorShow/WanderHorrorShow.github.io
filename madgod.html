@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAD GOD | WanderHorrorShow</title>
+    <link rel="stylesheet" href="css/sliderbard.css"> <!-- Asegúrate de tener este archivo CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <style>
+        body {
+            background-image: url('img/madgodportada.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding-top: 20px;
+            z-index: 1000;
+            color: white;
+            font-size: 18px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            color: #ff6347;
+            margin-bottom: 30px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            border-bottom: 1px solid #444;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #ff6347;
+        }
+
+        .container {
+            margin-left: 250px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .video-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .video-iframe-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            width: 100%;
+            max-width: 1600px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: #f0f0f0;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff6347;
+        }
+
+        /* Estilos del slider bar */
+        .slider-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1001;
+        }
+
+        .slider-bar .logo {
+            font-size: 20px;
+            color: #ff6347;
+            font-weight: bold;
+        }
+
+        .slider-bar nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .slider-bar nav a:hover {
+            color: #ff6347;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Slider Bar -->
+    <div class="slider-bar">
+        <div class="logo">WanderHorrorShow</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="https://www.youtube.com/@TheWanderHorrorShow">YouTube</a>
+            <a href="https://www.paypal.me/WanderGameplay">Donaciones</a>
+        </nav>
+    </div>
+
+    <div class="sidebar">
+        <h2>Barra Lateral</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="https://www.youtube.com/@TheWanderHorrorShow">YouTube</a></li>
+            <li><a href="https://www.paypal.me/WanderGameplay">Donaciones</a></li>
+            <li><a href="horrorshowpelis.html">PELICULAS</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <!-- Reproductores de video embebidos -->
+            <div class="video-container">
+                <div class="video-iframe-wrapper">
+                    <iframe src="https://geo.dailymotion.com/player.html?video=x8jg05v"
+                            allowfullscreen
+                            title="Dailymotion Video Player"
+                            allow="web-share">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 WanderHorrorShow | <a href="https://www.youtube.com/@TheWanderHorrorShow">YouTube</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+.carousel {
+    width: 1418px;
+    height: 374px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+    position: relative;
+  }
+  
+  /* Contenedor que se mueve */
+  .carousel-track {
+    display: flex;
+    width: calc(100% * 3); /* para 3 imágenes */
+    height: 100%;
+    animation: slide 12s infinite ease-in-out;
+  }
+  
+  /* Estilo de cada imagen */
+  .carousel-track img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex: 0 0 100%;
+  }
+  
+
+  @keyframes slide {
+    0%   { transform: translateX(0); }
+    33%  { transform: translateX(-100%); }
+    66%  { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+  }

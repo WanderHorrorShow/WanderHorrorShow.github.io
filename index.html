@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANDER HORROR SHOW</title>
+    <link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/body.css">
+</head>
+<body>
+    <!-- Demonio de carga -->
+    <div id="loader" class="loader">
+        <div class="demonio">
+            <div class="ojo"></div>
+            <div class="ojo"></div>
+            <div class="boca"></div>
+            <div class="ala izq"></div>
+            <div class="ala der"></div>
+        </div>
+        
+        <div class="cuerpo">
+            <div class="brazo izq"></div>
+            <div class="brazo der"></div>
+            <div class="pierna izq"></div>
+            <div class="pierna der"></div>
+            <div class="cola"></div>
+          </div>
+
+        <button id="enter-btn">Entrar</button>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="main-content" class="main-content">
+        <!-- Navbar -->
+        <nav>
+            <div class="navbar">
+                <h1 class="logo">WANDER HORROR SHOW</h1>
+                <div class="menu">
+                    <a href="index.html">Hogar</a>
+                    <a href="horrorshowpelis.html">Películas</a>
+                    <a href="descargas.html">Descargas</a>
+                    
+                </div>
+                <input type="text" class="search-bar" placeholder="Buscar...">
+            </div>
+        </nav>
+
+		<div class="carousel">
+			<div class="carousel-track">
+			  <img src="img/carrusel horror show (1).png" alt="Imagen 1">
+			  <img src="img/carrusel horror show (2).png" alt="Imagen 2">
+			  <img src="img/horrorshow.png" alt="Imagen 3">
+			</div>
+		  </div>
+		  
+
+        <!-- Sección Proyectos -->
+        <section class="proyectos">
+            <h2>Redes / Devep</h2>
+            <div class="card-container">
+                <div class="card">
+                    <a href="https://www.youtube.com/@TheWanderHorrorShow" target="_blank">
+                        <img src="img/yt.png" alt="YouTube">
+                        <p>YouTube</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/WanderHorrorShow" target="_blank">
+                        <img src="img/github.png" alt="GitHub">
+                        <p>GitHub</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.facebook.com/WanderHorrorShow/" target="_blank">
+                        <img src="img/fb.png" alt="Facebook">
+                        <p>Facebook</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Línea de carga -->
+        <div class="loading-line"></div>
+
+        <!-- Sección de información personal -->
+        <section class="info">
+            <div class="perfil">
+                <img src="img/wander mascara.png" alt="Mi foto" class="foto-perfil">
+            </div>
+            <div class="bio">
+                <h3>Sobre mí</h3>
+                <p>
+					💻🎮 Streamer | Gamer | Escritor | Rapero | Desarrollador de Software 🎤✍️
+
+					Apasionado por la creatividad en todas sus formas. Me la vivo entre videojuegos, 
+					rimas y líneas de código. Escribo historias, compongo música y desarrollo software 
+					con inteligencia artificial. Siempre explorando nuevas ideas y llevándolas a la realidad. 🚀
+				</p>
+            </div>
+        </section>
+
+        <!-- Sección de carrera -->
+        <section class="carrera">
+            <div class="bio">
+                <h3>Carrera</h3>
+				<p>
+					Hola soy WanderHorrorShow "la mente maestra", Tengo una carrera Tec. En Ing. De Software Con IA.
+					Me dedico al mundo gamer, transmitir videojuegos, escribir relatos de horror, tengo un libro publicado.
+				  </p>
+				  <a href="https://amzn.eu/d/9LlmzaZ" target="_blank" class="boton-libro">Ver mi libro en Amazon</a>
+				  
+            </div>
+            <div class="perfil">
+                <img src="img/logo2025-05-11.png" alt="Mi foto" class="foto-perfil">
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-links">
+                <a href="https://www.paypal.com/paypalme/WanderGameplay">Donaciones</a>
+                <a href="#">Acerca</a>
+                <a href="mailto:wanderhorrorshow@gmail.com">Contacto</a>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        document.getElementById('enter-btn').addEventListener('click', function() {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

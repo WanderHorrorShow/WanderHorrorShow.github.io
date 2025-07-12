@@ -1,0 +1,27 @@
+/* Navbar */
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navbar .search-bar {
+    padding: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+}
+

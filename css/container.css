@@ -1,0 +1,14 @@
+.container {
+    background-color: #71c1e0ab; /* Fondo rojo oscuro */
+    color: #f7f4f4; /* Letras de color claro */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: justify;
+  }
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  

@@ -1,0 +1,422 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Demonio de carga */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.demonio {
+    width: 60px;
+    height: 60px;
+    background: red;
+    border-radius: 50%;
+    position: relative;
+    margin: 50px auto;
+}
+
+/* Ojos */
+.demonio .ojo {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.demonio .ojo:first-child {
+    left: 12px;
+    top: 18px;
+}
+
+.demonio .ojo:last-child {
+    right: 12px;
+    top: 18px;
+}
+
+/* Boca */
+.demonio .boca {
+    width: 30px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    border-radius: 10px;
+}
+
+/* Cuernos */
+.demonio::before,
+.demonio::after {
+    content: "";
+    width: 10px;
+    height: 20px;
+    background: black;
+    position: absolute;
+    top: -15px;
+    border-radius: 50% 50% 0 0;
+}
+
+.demonio::before {
+    left: 5px;
+    transform: rotate(-30deg);
+}
+
+.demonio::after {
+    right: 5px;
+    transform: rotate(30deg);
+}
+
+/* Cuerpo */
+.cuerpo {
+    width: 40px;
+    height: 60px;
+    background: red;
+    position: relative;
+    top: -10px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+/* Brazos */
+.brazo {
+    width: 10px;
+    height: 40px;
+    background: red;
+    position: absolute;
+    top: 10px;
+}
+
+.brazo.izq {
+    left: -15px;
+    transform: rotate(30deg);
+}
+
+.brazo.der {
+    right: -15px;
+    transform: rotate(-30deg);
+}
+
+/* Piernas */
+.pierna {
+    width: 10px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    bottom: -30px;
+}
+
+.pierna.izq {
+    left: 5px;
+}
+
+.pierna.der {
+    right: 5px;
+}
+
+
+/* Parpadeo */
+@keyframes parpadeo {
+    0%, 90%, 100% {
+        height: 10px;
+    }
+    95% {
+        height: 2px;
+    }
+}
+
+.ojo {
+    animation: parpadeo 3s infinite;
+}
+
+/* Rebote */
+@keyframes rebote {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.demonio, .cuerpo {
+    animation: rebote 2s infinite ease-in-out;
+}
+
+/* Movimiento de brazos */
+@keyframes brazos-flameantes {
+    0%, 100% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+}
+
+.brazo.izq {
+    animation: brazos-flameantes 1.5s infinite ease-in-out;
+    transform-origin: top right;
+}
+
+.brazo.der {
+    animation: brazos-flameantes 1.5s infinite ease-in-out reverse;
+    transform-origin: top left;
+}
+
+/* FONDO INFERNAL */
+body {
+    background: linear-gradient(to bottom, #1a0000, #660000);
+    overflow-x: hidden;
+    animation: inferno 10s infinite alternate;
+}
+
+@keyframes inferno {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100px; }
+}
+
+/* COLA */
+.cola {
+    width: 60px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50% 50% 0 0;
+    animation: cola-onda 2s infinite ease-in-out;
+}
+
+@keyframes cola-onda {
+    0%, 100% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-50%) rotate(15deg);
+    }
+}
+
+/* ALAS */
+.ala {
+    width: 40px;
+    height: 20px;
+    background: black;
+    position: absolute;
+    top: -10px;
+    border-radius: 50% 50% 0 0;
+    opacity: 0.8;
+    animation: aleteo 1s infinite ease-in-out;
+    z-index: -1;
+}
+
+.ala.izq {
+    left: -35px;
+    transform-origin: right bottom;
+}
+
+.ala.der {
+    right: -35px;
+    transform-origin: left bottom;
+    animation-delay: 0.5s;
+}
+
+@keyframes aleteo {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(0.7); }
+}
+
+
+
+
+
+#main-content {
+    display: none;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navbar .search-bar {
+    padding: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+}
+
+/* Fondo negro y texto blanco */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centrado y contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Enlaces blancos con hover rojo */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(20, 220, 137);
+}
+
+/* Botones con estilo */
+button {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#enter-btn {
+    margin-top: 80px; /* Ajusta el valor según lo que necesites */
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+button:hover {
+    background-color: #333;
+    border-color: crimson;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+  
+
+/* Proyectos */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    width: 30%;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Línea de carga */
+.loading-line {
+    border-top: 4px solid green;
+    margin: 40px 0;
+}
+
+/* Sección de información */
+.info {
+    display: flex;
+    margin-top: 40px;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.bio h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bio p {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Sección de carrera */
+.carrera {
+    display: flex;
+    margin-top: 40px;
+}
+
+.carrera .bio {
+    flex: 1;
+}
+
+.carrera .perfil {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
